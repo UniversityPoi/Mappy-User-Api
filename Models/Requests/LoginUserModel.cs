@@ -1,19 +1,14 @@
-using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 
 namespace MappyUserApi.Models.Requests
 {
-    public class RegisterUserModel
+    public class LoginUserModel
     {
-        [Required]
-        public string? Username { get; set; }
-
         [Required]
         [EmailAddress]
         public string Email { get; set; }
 
         [Required]
         public string Password { get; set; }
-
     }
 }
